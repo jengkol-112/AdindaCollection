@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    /* Mengatur box-sizing untuk semua elemen */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.lovepik.com/background/20211022/medium/lovepik-black-creative-background-image_500872893.jpg');
+    /* Ganti dengan URL gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background: rgba(53, 66, 74, 0.8);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    /* Efek transisi saat hover */
+}
+
+.product:hover {
+    transform: scale(1.05);
+    /* Efek zoom saat hover */
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 10px;
+    color: #555555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(53, 66, 74, 0.8);
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Media Queries untuk Responsivitas */
+
+@media (max-width: 768px) {
+    .product {
+        width: 90%;
+        /* Lebar produk lebih besar di perangkat kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+        /* Ukuran font header lebih kecil di perangkat sangat kecil */
+    }
+    @media (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+    }
+}
